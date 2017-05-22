@@ -14,6 +14,11 @@
 		DE44BDF71ED2DB0000A89916 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE44BDF51ED2DB0000A89916 /* LaunchScreen.storyboard */; };
 		DE44BE021ED2DB0100A89916 /* MomoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE44BE011ED2DB0100A89916 /* MomoAppTests.swift */; };
 		DE44BE0D1ED2DB0100A89916 /* MomoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE44BE0C1ED2DB0100A89916 /* MomoAppUITests.swift */; };
+		DE44BE1C1ED2DD2500A89916 /* DesignTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE44BE1B1ED2DD2500A89916 /* DesignTextField.swift */; };
+		DE44BE1E1ED2DD9D00A89916 /* DesignButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE44BE1D1ED2DD9D00A89916 /* DesignButton.swift */; };
+		DE44BE201ED2DE2300A89916 /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DE44BE1F1ED2DE2300A89916 /* logo.jpg */; };
+		DE44BE221ED2DE7500A89916 /* DesignImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE44BE211ED2DE7500A89916 /* DesignImageView.swift */; };
+		DE44BE241ED2DFE500A89916 /* DesignLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE44BE231ED2DFE500A89916 /* DesignLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		DE44BE081ED2DB0100A89916 /* MomoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MomoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE44BE0C1ED2DB0100A89916 /* MomoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomoAppUITests.swift; sourceTree = "<group>"; };
 		DE44BE0E1ED2DB0100A89916 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE44BE1B1ED2DD2500A89916 /* DesignTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignTextField.swift; sourceTree = "<group>"; };
+		DE44BE1D1ED2DD9D00A89916 /* DesignButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignButton.swift; sourceTree = "<group>"; };
+		DE44BE1F1ED2DE2300A89916 /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo.jpg; sourceTree = "<group>"; };
+		DE44BE211ED2DE7500A89916 /* DesignImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignImageView.swift; sourceTree = "<group>"; };
+		DE44BE231ED2DFE500A89916 /* DesignLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +111,13 @@
 				DE44BDEE1ED2DB0000A89916 /* ViewController.swift */,
 				DE44BDF01ED2DB0000A89916 /* Main.storyboard */,
 				DE44BDF31ED2DB0000A89916 /* Assets.xcassets */,
+				DE44BE1A1ED2DBA900A89916 /* support */,
 				DE44BDF51ED2DB0000A89916 /* LaunchScreen.storyboard */,
 				DE44BDF81ED2DB0000A89916 /* Info.plist */,
+				DE44BE1B1ED2DD2500A89916 /* DesignTextField.swift */,
+				DE44BE1D1ED2DD9D00A89916 /* DesignButton.swift */,
+				DE44BE211ED2DE7500A89916 /* DesignImageView.swift */,
+				DE44BE231ED2DFE500A89916 /* DesignLabel.swift */,
 			);
 			path = MomoApp;
 			sourceTree = "<group>";
@@ -123,6 +138,14 @@
 				DE44BE0E1ED2DB0100A89916 /* Info.plist */,
 			);
 			path = MomoAppUITests;
+			sourceTree = "<group>";
+		};
+		DE44BE1A1ED2DBA900A89916 /* support */ = {
+			isa = PBXGroup;
+			children = (
+				DE44BE1F1ED2DE2300A89916 /* logo.jpg */,
+			);
+			name = support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +252,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE44BE201ED2DE2300A89916 /* logo.jpg in Resources */,
 				DE44BDF71ED2DB0000A89916 /* LaunchScreen.storyboard in Resources */,
 				DE44BDF41ED2DB0000A89916 /* Assets.xcassets in Resources */,
 				DE44BDF21ED2DB0000A89916 /* Main.storyboard in Resources */,
@@ -256,8 +280,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE44BE241ED2DFE500A89916 /* DesignLabel.swift in Sources */,
+				DE44BE221ED2DE7500A89916 /* DesignImageView.swift in Sources */,
 				DE44BDEF1ED2DB0000A89916 /* ViewController.swift in Sources */,
 				DE44BDED1ED2DB0000A89916 /* AppDelegate.swift in Sources */,
+				DE44BE1C1ED2DD2500A89916 /* DesignTextField.swift in Sources */,
+				DE44BE1E1ED2DD9D00A89916 /* DesignButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
