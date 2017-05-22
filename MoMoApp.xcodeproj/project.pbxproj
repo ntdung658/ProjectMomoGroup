@@ -14,6 +14,7 @@
 		8A0B712A1ECEF69A00954482 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A0B71281ECEF69A00954482 /* LaunchScreen.storyboard */; };
 		8A0B71351ECEF69A00954482 /* MoMoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0B71341ECEF69A00954482 /* MoMoAppTests.swift */; };
 		8A0B71401ECEF69A00954482 /* MoMoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0B713F1ECEF69A00954482 /* MoMoAppUITests.swift */; };
+		8A6D2AE71ED2DDF600AA70EC /* LogoMobile.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A6D2AE61ED2DDF600AA70EC /* LogoMobile.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		8A0B713B1ECEF69A00954482 /* MoMoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoMoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A0B713F1ECEF69A00954482 /* MoMoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoMoAppUITests.swift; sourceTree = "<group>"; };
 		8A0B71411ECEF69A00954482 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A6D2AE61ED2DDF600AA70EC /* LogoMobile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LogoMobile.png; path = ../../../IMG/LogoMobile.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		8A0B711E1ECEF69A00954482 /* MoMoApp */ = {
 			isa = PBXGroup;
 			children = (
+				8A6D2AE31ED2DBEC00AA70EC /* img */,
 				8A0B711F1ECEF69A00954482 /* AppDelegate.swift */,
 				8A0B71211ECEF69A00954482 /* ViewController.swift */,
 				8A0B71231ECEF69A00954482 /* Main.storyboard */,
@@ -123,6 +126,14 @@
 				8A0B71411ECEF69A00954482 /* Info.plist */,
 			);
 			path = MoMoAppUITests;
+			sourceTree = "<group>";
+		};
+		8A6D2AE31ED2DBEC00AA70EC /* img */ = {
+			isa = PBXGroup;
+			children = (
+				8A6D2AE61ED2DDF600AA70EC /* LogoMobile.png */,
+			);
+			name = img;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +242,7 @@
 			files = (
 				8A0B712A1ECEF69A00954482 /* LaunchScreen.storyboard in Resources */,
 				8A0B71271ECEF69A00954482 /* Assets.xcassets in Resources */,
+				8A6D2AE71ED2DDF600AA70EC /* LogoMobile.png in Resources */,
 				8A0B71251ECEF69A00954482 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,6 +496,7 @@
 				8A0B71461ECEF69A00954482 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8A0B71471ECEF69A00954482 /* Build configuration list for PBXNativeTarget "MoMoAppTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +505,7 @@
 				8A0B71491ECEF69A00954482 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8A0B714A1ECEF69A00954482 /* Build configuration list for PBXNativeTarget "MoMoAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +514,7 @@
 				8A0B714C1ECEF69A00954482 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
