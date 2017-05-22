@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -13,14 +14,169 @@
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="ButtonDesign" customModule="MoMoApp" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Thực hiện bước cuối cùng để hoàn tất đăng ký" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9UN-pu-Nhu">
+                                <rect key="frame" x="150" y="121" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="99" y="104" width="203" height="51"/>
+                                </variation>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nhập email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9WG-8e-f6u" customClass="TextFieldDesign" customModule="MoMoApp" customModuleProvider="target">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="35" y="232" width="331" height="50"/>
+                                </variation>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vui lòng nhập địa chỉ email chính xác để MoMo gửi biên lai điện tử và các thông báo bảo mật của tài khoản cho bạn" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndc-Yz-KiG">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="35" y="285" width="331" height="75"/>
+                                </variation>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nhập họ &amp; tên" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1i1-04-EIc" customClass="TextFieldDesign" customModule="MoMoApp" customModuleProvider="target">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="35" y="174" width="331" height="50"/>
+                                </variation>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="PZu-Fn-Bkq">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="161" y="35" width="78" height="61"/>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4d9-mJ-PTq" customClass="ButtonDesign" customModule="MoMoApp">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.53725490196078429" green="0.0" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="XÁC NHẬN">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="35" y="368" width="331" height="50"/>
+                                </variation>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.61568627450980395" green="0.0" blue="0.35294117647058826" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="9UN-pu-Nhu" firstAttribute="top" secondItem="PZu-Fn-Bkq" secondAttribute="bottom" constant="8" id="2sH-H4-05N"/>
+                            <constraint firstItem="1i1-04-EIc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="27" id="Blz-tq-jap"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1i1-04-EIc" secondAttribute="trailing" constant="26" id="IDE-kK-8So"/>
+                            <constraint firstItem="4d9-mJ-PTq" firstAttribute="top" secondItem="ndc-Yz-KiG" secondAttribute="bottom" constant="8" id="Kab-ho-mxI"/>
+                            <constraint firstItem="9UN-pu-Nhu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="91" id="L8W-UA-le2"/>
+                            <constraint firstItem="ndc-Yz-KiG" firstAttribute="top" secondItem="9WG-8e-f6u" secondAttribute="bottom" constant="3" id="PUi-IX-O5j"/>
+                            <constraint firstItem="9WG-8e-f6u" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="27" id="RrS-XC-SLH"/>
+                            <constraint firstItem="PZu-Fn-Bkq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="15" id="Tr3-fb-cED"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="PZu-Fn-Bkq" secondAttribute="trailing" constant="153" id="UPW-mV-zr4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9UN-pu-Nhu" secondAttribute="trailing" constant="90" id="WPj-pc-31b"/>
+                            <constraint firstItem="4d9-mJ-PTq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="27" id="WeJ-su-00g"/>
+                            <constraint firstItem="1i1-04-EIc" firstAttribute="top" secondItem="9UN-pu-Nhu" secondAttribute="bottom" constant="19" id="ZNe-VG-D5M"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4d9-mJ-PTq" secondAttribute="trailing" constant="26" id="a1x-OB-hLG"/>
+                            <constraint firstItem="9WG-8e-f6u" firstAttribute="top" secondItem="1i1-04-EIc" secondAttribute="bottom" constant="8" id="pNj-LT-ckS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9WG-8e-f6u" secondAttribute="trailing" constant="26" id="prV-Aj-nG5"/>
+                            <constraint firstItem="ndc-Yz-KiG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="27" id="sR1-jW-rwX"/>
+                            <constraint firstItem="PZu-Fn-Bkq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="153" id="waM-dI-vl6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ndc-Yz-KiG" secondAttribute="trailing" constant="26" id="zEM-fj-tLG"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="9WG-8e-f6u"/>
+                                <exclude reference="ndc-Yz-KiG"/>
+                                <exclude reference="1i1-04-EIc"/>
+                                <exclude reference="PZu-Fn-Bkq"/>
+                                <exclude reference="4d9-mJ-PTq"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="2sH-H4-05N"/>
+                                <exclude reference="L8W-UA-le2"/>
+                                <exclude reference="WPj-pc-31b"/>
+                                <exclude reference="Tr3-fb-cED"/>
+                                <exclude reference="UPW-mV-zr4"/>
+                                <exclude reference="waM-dI-vl6"/>
+                                <exclude reference="Blz-tq-jap"/>
+                                <exclude reference="IDE-kK-8So"/>
+                                <exclude reference="ZNe-VG-D5M"/>
+                                <exclude reference="RrS-XC-SLH"/>
+                                <exclude reference="pNj-LT-ckS"/>
+                                <exclude reference="prV-Aj-nG5"/>
+                                <exclude reference="PUi-IX-O5j"/>
+                                <exclude reference="sR1-jW-rwX"/>
+                                <exclude reference="zEM-fj-tLG"/>
+                                <exclude reference="Kab-ho-mxI"/>
+                                <exclude reference="WeJ-su-00g"/>
+                                <exclude reference="a1x-OB-hLG"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="9WG-8e-f6u"/>
+                                <include reference="ndc-Yz-KiG"/>
+                                <include reference="1i1-04-EIc"/>
+                                <include reference="PZu-Fn-Bkq"/>
+                                <include reference="4d9-mJ-PTq"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="2sH-H4-05N"/>
+                                <include reference="L8W-UA-le2"/>
+                                <include reference="WPj-pc-31b"/>
+                                <include reference="Tr3-fb-cED"/>
+                                <include reference="UPW-mV-zr4"/>
+                                <include reference="waM-dI-vl6"/>
+                                <include reference="Blz-tq-jap"/>
+                                <include reference="IDE-kK-8So"/>
+                                <include reference="ZNe-VG-D5M"/>
+                                <include reference="RrS-XC-SLH"/>
+                                <include reference="pNj-LT-ckS"/>
+                                <include reference="prV-Aj-nG5"/>
+                                <include reference="PUi-IX-O5j"/>
+                                <include reference="sR1-jW-rwX"/>
+                                <include reference="zEM-fj-tLG"/>
+                                <include reference="Kab-ho-mxI"/>
+                                <include reference="WeJ-su-00g"/>
+                                <include reference="a1x-OB-hLG"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="244.5" y="399"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo.jpg" width="150" height="150"/>
+    </resources>
 </document>
